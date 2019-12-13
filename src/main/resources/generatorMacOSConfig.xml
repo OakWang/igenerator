@@ -36,9 +36,9 @@
 
         <!-- 数据库链接URL、用户名、密码；需要自定义connectionURL、userId、password -->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.6.70:3306/ai_platform_label"
-                        userId="yuankui"
-                        password="yuankui123">
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/my_database"
+                        userId="userId"
+                        password="password">
             <property name="useInformationSchema" value="true"/>
         </jdbcConnection>
 
