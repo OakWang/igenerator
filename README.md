@@ -78,3 +78,7 @@
 2.POJO类效果图:
 
 ![POJO类效果图](https://raw.githubusercontent.com/OakWang/igenerator/master/src/main/resources/static/pojo.png)
+
+## 说明
+
+虽然说Mybatis3版本下是支持生成Example文件的，能够提供一定的便利性，但是过多的Example文件显得很臃肿，故而并没有选择生成那些文件。毕竟 *Simplicity is the best*.
