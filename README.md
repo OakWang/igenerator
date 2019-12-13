@@ -70,3 +70,11 @@
 - 结果
 
 如果程序运行成功，生成的代码在包igenerator同级目录下。
+
+1.代码结构图：
+
+![https://raw.githubusercontent.com/OakWang/igenerator/master/src/main/resources/static/result.png](代码结构图)
+
+2.POJO类效果图:
+
+![https://raw.githubusercontent.com/OakWang/igenerator/master/src/main/resources/static/pojo.png](POJO类效果图)
