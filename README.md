@@ -73,8 +73,8 @@
 
 1.代码结构图：
 
-![https://raw.githubusercontent.com/OakWang/igenerator/master/src/main/resources/static/result.png](代码结构图)
+![代码结构图](https://raw.githubusercontent.com/OakWang/igenerator/master/src/main/resources/static/result.png)
 
 2.POJO类效果图:
 
-![https://raw.githubusercontent.com/OakWang/igenerator/master/src/main/resources/static/pojo.png](POJO类效果图)
+![POJO类效果图](https://raw.githubusercontent.com/OakWang/igenerator/master/src/main/resources/static/pojo.png)
