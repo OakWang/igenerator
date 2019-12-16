@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Generator
  *
- * @author wangdonglei
+ * @author itoak
  * @date 2019-12-13
  * @time 11:45
  * @desc 代码生成抽象类

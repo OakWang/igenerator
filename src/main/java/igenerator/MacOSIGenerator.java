@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * MacOSGenerator
  *
- * @author wangdonglei
+ * @author itoak
  * @date 2019-12-12
  * @time 18:56
  * @desc MacOS环境下代码生成器

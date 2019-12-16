@@ -12,7 +12,7 @@ import java.util.Properties;
 /**
  * MySQLCommentGenerator
  *
- * @author wangdonglei
+ * @author itoak
  * @date 2019-12-13
  * @time 14:36
  * @desc 获取MySQL表字段注释
