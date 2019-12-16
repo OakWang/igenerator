@@ -55,12 +55,12 @@
 - 填写需要生成的表信息
 ```xml
 <table schema="dispatch" tableName="lb_dual_call" domainObjectName="DualCallPO" mapperName="DualCallDAO">
-    <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
     <!-- 将tinyint转换为Integer类型 -->
     <columnOverride column="asr_flag" javaType="java.lang.Integer" jdbcType="TINYINT"/>
 </table>
 <table schema="dispatch" tableName="lb_data" domainObjectName="DataPO" mapperName="DataDAO">
-    <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+    <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
 </table>
 ```
 - 运行程序

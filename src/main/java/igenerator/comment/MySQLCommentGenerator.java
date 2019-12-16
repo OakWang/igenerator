@@ -4,9 +4,13 @@ import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.dom.java.Field;
 import org.mybatis.generator.api.dom.java.TopLevelClass;
+import org.mybatis.generator.api.dom.xml.TextElement;
+import org.mybatis.generator.api.dom.xml.XmlElement;
+import org.mybatis.generator.config.MergeConstants;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Properties;
 
 /**
@@ -18,6 +22,9 @@ import java.util.Properties;
  * @desc 获取MySQL表字段注释
  */
 public class MySQLCommentGenerator extends ICommentGenerator {
+
+    private DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+
     private Properties properties;
 
     public MySQLCommentGenerator() {
@@ -43,7 +50,7 @@ public class MySQLCommentGenerator extends ICommentGenerator {
         topLevelClass.addJavaDocLine(" * " + remarks);
         topLevelClass.addJavaDocLine(" *");
         topLevelClass.addJavaDocLine(" * @author " + author);
-        topLevelClass.addJavaDocLine(" * @date " + dateFormatter.format(new Date()));
+        topLevelClass.addJavaDocLine(" * @date " + LocalDate.now().format(dtf));
         topLevelClass.addJavaDocLine(" */");
     }
 
@@ -54,5 +61,14 @@ public class MySQLCommentGenerator extends ICommentGenerator {
         field.addJavaDocLine("/**");
         field.addJavaDocLine(" * " + remarks);
         field.addJavaDocLine(" */");
+    }
+
+    /**
+     * 这个东西还必须要 - -！
+     * @param xmlElement 元素
+     */
+    @Override
+    public void addComment(XmlElement xmlElement) {
+        xmlElement.addElement(new TextElement("<!-- " + MergeConstants.NEW_ELEMENT_TAG + " -->"));
     }
 }
