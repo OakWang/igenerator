@@ -31,7 +31,6 @@
         <!-- 自定义注释生成器 -->
         <commentGenerator type="igenerator.comment.MySQLCommentGenerator">
             <property name="author" value="itoak"/>
-            <property name="dateFormat" value="yyyy/MM/dd"/>
         </commentGenerator>
 
         <!-- 数据库链接URL、用户名、密码；需要自定义connectionURL、userId、password -->
@@ -65,19 +64,21 @@
         <!--
             要生成哪些表；需要自定义tableName、domainObjectName、mapperName
             示例：
-            <table schema="dispatch" tableName="lb_dual_call" domainObjectName="DualCallPO" mapperName="DualCallDAO">
+            <table schema="dispatch" delimitAllColumns="true" delimitIdentifiers="`" tableName="lb_dual_call" domainObjectName="DualCallPO" mapperName="DualCallDAO">
                 <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
                 <columnOverride column="asr_flag" javaType="java.lang.Integer" jdbcType="TINYINT"/>
             </table>
             说明：
             columnOverride用于类型转换，如数据库tinyint转换为Integer
         -->
-        <table schema="dispatch" tableName="lb_dual_call" domainObjectName="DualCallPO" mapperName="DualCallDAO">
+        <table schema="dispatch" delimitAllColumns="true" delimitIdentifiers="`"
+               tableName="lb_dual_call" domainObjectName="DualCallPO" mapperName="DualCallDAO">
             <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
             <!-- 将tinyint转换为Integer类型 -->
             <columnOverride column="asr_flag" javaType="java.lang.Integer" jdbcType="TINYINT"/>
         </table>
-        <table schema="dispatch" tableName="lb_data" domainObjectName="DataPO" mapperName="DataDAO">
+        <table schema="dispatch" delimitAllColumns="true" delimitIdentifiers="`"
+               tableName="lb_data" domainObjectName="DataPO" mapperName="DataDAO">
             <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
         </table>
 
