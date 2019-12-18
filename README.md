@@ -5,6 +5,7 @@
 
 ## 使用方法
 ### 修改配置文件
+
 **根据自身操作系统，修改配置文件resources/generatorMacOSConfig.xml 或 resources/generatorWindowsConfig.xml**
 
 - 修改注释author
