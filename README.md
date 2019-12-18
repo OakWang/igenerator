@@ -13,7 +13,6 @@
 <!-- 自定义注释生成器 -->
 <commentGenerator type="igenerator.comment.MySQLCommentGenerator">
     <property name="author" value="itoak"/>
-    <property name="dateFormat" value="yyyy/MM/dd"/>
 </commentGenerator>
 ```
 
